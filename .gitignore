@@ -1,0 +1,82 @@
+# ======================================
+# .gitignore for .NET Modular Monolith
+# ======================================
+
+# ========================
+# Postgres and Docker data
+# ========================
+src/docker-data/postgres/
+src/docker-data/seq/
+
+# ========================
+# Visual Studio / IDE
+# ========================
+.vs/
+src/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+_ReSharper*/
+*.DotSettings.user
+
+# Rider IDE
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# ========================
+# Build folders
+# ========================
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Specific modules (optional, already covered by **/bin and **/obj)
+src/Bootstrapper/Api/bin/
+src/Bootstrapper/Api/obj/
+src/Modules/Basket/Basket/bin/
+src/Modules/Basket/Basket/obj/
+src/Modules/Catalog/Catalog/bin/
+src/Modules/Catalog/Catalog/obj/
+src/Modules/Ordering/Ordering/bin/
+src/Modules/Ordering/Ordering/obj/
+src/Shared/bin/
+src/Shared/obj/
+src/obj/
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# NuGet packages
+# ========================
+*.nupkg
+*.snupkg
+.nuget/
+
+# ========================
+# Temporary / cache files
+# ========================
+*.tmp
+*.temp
+*.cache
+*.vspscc
+*.vssscc
+
+# ========================
+# DotCover
+# ========================
+*.dotCover
+
+# ========================
+# Database files
+# ========================
+*.db
+*.sqlite
